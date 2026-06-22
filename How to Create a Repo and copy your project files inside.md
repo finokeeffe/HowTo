@@ -1,175 +1,208 @@
-# How to Create a GitHub Repo and Upload Your Project Files (HowTo)
+# GitHub Repo Setup Guide (Two Projects: HowTo + AstralAnomalies)
 
-This guide is for the documentation repo used to support technical setup and workflows.
+This document explains how to set up and upload two repositories using:
+- Command Line (Git)
+- GitHub Desktop (GUI)
+- VS Code (optional)
 
-Repository:
-https://github.com/finokeeffe/HowTo
-
----
-
-# 1. Purpose
-
-This repo is used for:
-- technical notes
-- setup instructions
-- Git workflow documentation
-- learning resources
+GitHub Desktop and VS Code are just visual layers — they still run Git commands underneath.
 
 ---
 
-# 2. Prerequisites
+# 1. Install Requirements
 
-## Install Git
-Git is required for command line usage.
+## Install Git (required for command line)
+Git is the system that tracks changes in your project.
 
 Download:
 https://git-scm.com/downloads
 
-Check:
-```bash
+Check installation:
 git --version
-Optional tools
-GitHub Desktop: https://desktop.github.com/
-VS Code: https://code.visualstudio.com/
-3. Local Folder Location
-
-This repo is stored here:
-
-c:\pgs\dev\repos\Fin\HowTo
-Navigate to folder (Command Line)
-cd c:\pgs\dev\repos\Fin\HowTo
-4. Clone Repository
-git clone https://github.com/finokeeffe/HowTo.git
-cd c:\pgs\dev\repos\Fin\HowTo
-GitHub Desktop
-Clone repository
-Set location:
-c:\pgs\dev\repos\Fin\HowTo
-5. Add Files
-
-Drag files into:
-
-c:\pgs\dev\repos\Fin\HowTo
-
-Make sure .gitignore is included.
-
-6. Stage Changes
-git add .
-
-VS Code:
-
-Source Control → “Stage All”
-
-GitHub Desktop:
-
-automatic
-7. Commit
-git commit -m "Initial commit"
-8. Push
-git push origin main
-9. .gitignore
-
-If needed:
-
-git rm -r --cached .
-git add .
-git commit -m "Fix gitignore"
-Summary
-Documentation repo for learning + workflows
-Safe place for Git instructions
 
 ---
 
+## Optional tools
+- GitHub Desktop: https://desktop.github.com/
+- VS Code: https://code.visualstudio.com/
+
 ---
 
-# 📄 FILE 2 — AstralAnomalies (Game Repo)
+# 2. GitHub Repositories
 
-```md
-# Astral Anomalies — GitHub Project Setup Guide
+You are working with two repositories:
 
-⚠️ IMPORTANT:
-This repository is sensitive to build artifacts and must NOT include generated engine files.
+## Documentation repo
+https://github.com/finokeeffe/HowTo
 
-Repository:
+Local path:
+c:\pgs\dev\repos\Fin\HowTo
+
+---
+
+## Game repo (sensitive build system)
 https://github.com/finokeeffe/AstralAnomalies
 
----
-
-# 1. Purpose
-
-This repo contains:
-- game source files
-- assets
-- scripts
-- engine project structure
-
-DO NOT commit:
-- build folders
-- cache folders
-- temporary engine files
-
----
-
-# 2. Prerequisites
-
-## Install Git
-https://git-scm.com/downloads
-
-Check:
-```bash
-git --version
-Optional tools
-GitHub Desktop: https://desktop.github.com/
-VS Code: https://code.visualstudio.com/
-3. Local Folder Location
+Local path:
 c:\pgs\dev\repos\Fin\AstralAnomalies
-Navigate to folder
+
+IMPORTANT:
+AstralAnomalies must NEVER include build or engine-generated files.
+
+---
+
+# 3. Navigate to Local Folder (Command Line)
+
+Open Command Prompt / PowerShell.
+
+HowTo:
+cd c:\pgs\dev\repos\Fin\HowTo
+
+AstralAnomalies:
 cd c:\pgs\dev\repos\Fin\AstralAnomalies
-4. Clone Repository
+
+Useful commands:
+dir   (list files)
+cd .. (go back folder)
+
+---
+
+# 4. Clone Repositories
+
+## Command Line
+
+HowTo:
+git clone https://github.com/finokeeffe/HowTo.git
+cd c:\pgs\dev\repos\Fin\HowTo
+
+AstralAnomalies:
 git clone https://github.com/finokeeffe/AstralAnomalies.git
 cd c:\pgs\dev\repos\Fin\AstralAnomalies
-GitHub Desktop
-Clone repository
-Set location:
+
+---
+
+## GitHub Desktop
+
+1. Open GitHub Desktop
+2. Click "Clone Repository"
+3. Paste repo URL
+4. Choose correct folder:
+
+HowTo:
+c:\pgs\dev\repos\Fin\HowTo
+
+AstralAnomalies:
 c:\pgs\dev\repos\Fin\AstralAnomalies
-5. .gitignore (CRITICAL)
 
-This project must exclude:
+---
 
-build output
-engine cache
-temporary/generated folders
+# 5. Add Project Files
 
-Only commit:
+Place files into the correct folder:
 
-source code
-assets
-configuration files
-6. Stage Changes
+HowTo:
+c:\pgs\dev\repos\Fin\HowTo
+
+AstralAnomalies:
+c:\pgs\dev\repos\Fin\AstralAnomalies
+
+IMPORTANT:
+Make sure .gitignore is present in both repositories.
+
+For AstralAnomalies:
+DO NOT include:
+- build folders
+- cache folders
+- engine-generated files
+- temporary files
+
+Only include:
+- source code
+- assets
+- configuration files
+
+---
+
+# 6. Stage Files (Prepare commit)
+
+Staging = selecting what will be saved.
+
+Command Line:
 git add .
 
 VS Code:
-
-Source Control → Stage All
+- Click Source Control icon
+- Click "Stage All Changes"
 
 GitHub Desktop:
-
-automatic
-7. Commit
-git commit -m "Initial commit"
-8. Push
-git push origin main
-9. Fix if wrong files were added
-git rm -r --cached .
-git add .
-git commit -m "Fix gitignore"
-Summary
-Game repo must be carefully managed
-Avoid committing generated files
-GitHub Desktop is safer for beginners but still uses Git underneath
+- Automatic staging (no manual step)
 
 ---
 
-If you want next upgrade, I can:
-- :contentReference[oaicite:0]{index=0}
-- or :contentReference[oaicite:1]{index=1}
+# 7. Commit Changes
+
+Command Line:
+git commit -m "Initial commit"
+
+VS Code:
+- Type message
+- Click Commit
+
+GitHub Desktop:
+- Enter message
+- Click Commit to main
+
+---
+
+# 8. Push to GitHub
+
+Command Line:
+git push origin main
+
+If needed:
+git push origin master
+
+VS Code:
+Click Sync Changes or Push
+
+GitHub Desktop:
+Click Push origin
+
+---
+
+# 9. .gitignore (VERY IMPORTANT)
+
+.gitignore controls what files are NOT uploaded.
+
+Rules:
+- Must be in repo root
+- Must be committed like normal file
+- Only works for untracked files
+
+If bad files were already added:
+
+git rm -r --cached .
+git add .
+git commit -m "Fix gitignore"
+
+---
+
+# 10. Summary
+
+Git:
+- tracks changes locally
+
+GitHub:
+- stores repositories online
+
+GitHub Desktop / VS Code:
+- visual interfaces for Git
+
+All methods ultimately run Git commands behind the scenes.
+
+---
+
+# Key Reminder
+
+AstralAnomalies is a sensitive project:
+Always ensure build/cache files are ignored before committing.
