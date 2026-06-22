@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UnityBackups\\AstralAnomalies\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD4CCDF-3761-DC03-7592-48CA3BE42287}|Assembly-CSharp.csproj|d:\\unitybackups\\astralanomalies\\assets\\scripts\\tilemaplooper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CD4CCDF-3761-DC03-7592-48CA3BE42287}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tilemaplooper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TilemapLooper.cs",
+              "DocumentMoniker": "D:\\UnityBackups\\AstralAnomalies\\Assets\\Scripts\\TilemapLooper.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TilemapLooper.cs",
+              "ToolTip": "D:\\UnityBackups\\AstralAnomalies\\Assets\\Scripts\\TilemapLooper.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TilemapLooper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-07T14:32:28.351Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
