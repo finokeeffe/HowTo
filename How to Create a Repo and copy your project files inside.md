@@ -114,7 +114,7 @@ AstralAnomalies:
 c:\pgs\dev\repos\Fin\AstralAnomalies
 
 IMPORTANT:
-AstralAnomalies must NOT include generated engine folders.
+AstralAnomalies must NOT include generated engine folders see how this works in the next section with the .gitignore file.
 
 ---
 
