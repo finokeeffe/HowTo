@@ -149,6 +149,8 @@ If included:
 
 # 7. Stage Files
 
+Staging File can be done either via command line or using VSCODE/
+
 ## Command Line
 git add .
 
