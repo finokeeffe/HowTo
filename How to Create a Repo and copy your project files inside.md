@@ -152,6 +152,27 @@ If included:
 ## Command Line
 git add .
 
+## VS Code (IMPORTANT UPDATE)
+
+Staging in VS Code is the visual equivalent of:
+git add .
+
+Steps:
+
+1. Open VS Code
+2. Open the repo folder:
+   - c:\pgs\dev\repos\Fin\HowTo OR
+   - c:\pgs\dev\repos\Fin\AstralAnomalies
+3. Click **Source Control icon** (left sidebar)
+4. You will see a list of changed files under “Changes”
+5. Click:
+   - **“Stage All Changes”**
+   
+OR individually click the **+ icon** next to files
+
+👉 This is EXACTLY the same as running:
+git add .
+
 ---
 
 ## VS Code
