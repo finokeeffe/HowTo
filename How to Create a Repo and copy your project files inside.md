@@ -124,7 +124,7 @@ Create a file called:
 .gitignore
 
 Inside AstralAnomalies repo, include EXACTLY:
-
+```
 Library/
 Temp/
 Obj/
@@ -132,6 +132,7 @@ Build/
 Builds/
 Logs/
 UserSettings/
+```
 
 ---
 
