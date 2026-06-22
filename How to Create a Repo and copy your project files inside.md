@@ -76,3 +76,7 @@ If needed:
 git rm -r --cached .
 git add .
 git commit -m "Fix gitignore"
+Summary
+Safe place for documentation
+Easy Git workflow
+Used for learning and support material
